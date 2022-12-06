@@ -1,0 +1,123 @@
+:root{
+    --fondo:#ededed;
+    --blanco:white;
+
+}
+*,*:after,*:before{
+    box-sizing: border-box;
+    text-decoration:none;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    font-size: 1.5rem;
+    background: var(--fondo);
+}
+h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    padding: 0%;
+}
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.estaticos{
+    max-width: 40rem;
+}
+.estaticos-principal{
+    max-width: 100rem
+}
+/* Aqui inicia el contenido */
+
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentacion{
+    text-align: center;
+}
+.presentacion img{
+    max-width: 20rem;
+    padding: 0%;
+}
+.presentacion h2{
+    font-weight: 400;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Form background and desing */
+
+.linea{
+    background: #ededed;
+    width: 100%;
+    padding: .1rem;
+}
+.contenedor__formulario{
+    margin: auto 2rem;
+}
+.fondo__formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--blanco);
+    border-radius: .5rem;
+    gap: 1rem;
+    align-items: center; /* Este es para posicionar el form */
+    box-shadow: -10px 2px 40px -6px rgba(0,0,0,0.84);
+}
+.etiqueta{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    min-width: 100%;
+}
+
+.boton{
+    border-radius: .5rem ;
+    padding: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.boton-1{
+    width: 100%;
+    color: var(--blanco);
+    border-style: none;
+    background: rgb(46, 111, 216);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.boton-2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.boton-3{
+    background: rgb(49, 182, 49);
+    color: var(--blanco);
+    font-size: 1.5rem;
+    width: 20rem;
+}
+
+@media (min-width: 768px){
+    .contenedor-flex{
+        flex-direction: row;
+       justify-content: center;
+       margin-top: 15rem;
+    }
+    .estaticos{
+       min-width: 40rem; 
+    }
+    .presentacion h2{
+        text-align:left;
+    }
+}
